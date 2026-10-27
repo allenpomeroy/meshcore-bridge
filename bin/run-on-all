@@ -1,0 +1,9 @@
+nodes="meshcore-tx1 meshcore-co1 meshcore-mt1"
+remoteuser="meshcore"
+
+for n in $nodes
+do
+  echo ${n}:
+  ssh ${remoteuser}@${n} "$*"
+  echo
+done

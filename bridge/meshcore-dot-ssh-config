@@ -1,0 +1,15 @@
+Host meshcore-tx1
+    HostName localhost
+    Port 22001
+    HostKeyAlias meshcore-tx1
+    User meshcore
+Host meshcore-co1
+    HostName localhost
+    Port 22002
+    HostKeyAlias meshcore-co1
+    User meshcore
+Host meshcore-mt1
+    HostName localhost
+    Port 22003
+    HostKeyAlias meshcore-mt1
+    User meshcore

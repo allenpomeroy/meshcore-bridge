@@ -1,0 +1,13 @@
+[Unit]
+Description=MeshCore RS232 bridge <-> MQTT
+After=mqtt-stunnel.service
+Wants=mqtt-stunnel.service
+
+[Service]
+User=meshbridge
+ExecStart=/opt/meshcore-bridge/venv/bin/meshcore-bridge -c /etc/meshcore-bridge/config.yaml
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

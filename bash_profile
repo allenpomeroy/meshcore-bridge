@@ -8,4 +8,4 @@ fi
 # User specific environment and startup programs
 
 # meshcore-bridge
-export MC_FQDN=mcr.pomeroy.us
+export MC_FQDN=meshcore-bridge.example.us
